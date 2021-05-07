@@ -20,10 +20,23 @@ namespace WebApp_Practice
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/popper.min.js",
+                      "~/Scripts/popper.js",
+                      "~/Scripts/custom.js",
+                      "~/Scripts/bootstrap.bundle.min.js",
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/*.css",
+                      "~/Content/jquery-ui.css",
                       "~/Content/bootstrap.css",
+                      "~/Content/jquery.mCustomScrollbar.min.css",
+                      "~/Content/meanmenu.css",
+                      "~/Content/nice-select.css",
+                      "~/Content/normalize.css",
+                      "~/Content/owl.carousel.min.css",
+                      "~/Content/slick.css",
+                      "~/Content/style.css",
                       "~/Content/site.css"));
         }
     }
